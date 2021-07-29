@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function()
+            {
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function()
+                {
+                    correct.style.backgroundColor = 'Green';
+                    document.querySelector('#Answer1').innerHTML = 'Correct!';
+                });
+
+                let incorrects = document.querySelectorAll('.incorrect')
+                for (let i = 0; i < incorrects.length; i++)
+                {
+                    incorrects[i].addEventListener('click', function()
+                    {
+                        incorrects[i].style.backgroundColor = 'Red';
+                        document.querySelector('#Answer1').innerHTML = 'Incorrect!';
+
+                    });
+                }
+
+
+
+
+                document.querySelector('#check').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value == 'CS50')
+                    {
+                        input.style.backgroundColor = 'Green';
+                        document.querySelector('#Answer2').innerHTML = 'Correct!';
+                    }
+
+                    else
+                    {
+                        input.style.backgroundColor = 'Red';
+                        document.querySelector('#Answer2').innerHTML = 'Incorrect!';
+                    }
+                });
+           });
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <H3>Which of the following website is a provider of Internet hosting for software development and version control using Git?</H3>
+
+                 <button class ="incorrect">LinkedIn</button>
+                 <button class ="correct">GitHub</button>
+                 <button class ="incorrect">Notion</button>
+                 <button class ="incorrect">StackFlow</button>
+                 <p id="Answer1"></p>
+
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+
+                <h3>What is the best computer science course in the world ?</h3>
+                <input autocomplete="off" type="text">
+                <button id="check">Check Answer</button>
+                <p id="Answer2"></p>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>

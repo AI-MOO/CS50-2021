@@ -1,0 +1,240 @@
+body {
+    padding: 0;
+    margin: 0;
+    background:#16181A;
+    font-family:"Oswald";
+
+
+}
+/*------------------LOADER--------------------- */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #068980;
+  border-radius: 50%;
+  border-top: 16px solid #16181A;
+  background: rgb(7,163,152);
+  background: linear-gradient(15deg, rgba(7,163,152,1) 6%, rgba(4,108,101,1) 74%);
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/*---------------------------------------- */
+
+.header{
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.navbar {
+    background: rgb(7,163,152);
+    background: linear-gradient(15deg, rgba(7,163,152,1) 6%, rgba(4,108,101,1) 74%);
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    font-size:20px;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #FFFFFF;
+    background: rgb(53,69,94);
+    background: linear-gradient(15deg, rgba(53,69,94,1) 6%, rgba(74,74,74,1) 74%);
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+
+
+}
+.navbar-collapse {
+    justify-content: flex-start;
+}
+
+
+.description {
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+    background-position: center;
+    position: relative;
+
+}
+
+.description h1 {
+	color: #FFFFFF;
+	font-size:55px;
+}
+.description h2 {
+	color: #07A398;
+	font-size:28px;
+
+}
+
+.description p {
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+  text-align: justify;
+  text-align-last: center;
+}
+
+/*HOME: TELL ME MORE BUTTON */
+.description button {
+  border:1px solid #4A4A4A;
+  background: rgb(7,163,152);
+  background: linear-gradient(15deg, rgba(7,163,152,1) 6%, rgba(4,108,101,1) 74%);
+  border-radius: 0;
+  color:#fff;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.description button:hover {
+	border:1px solid #fff;
+  background: transparent;
+  color:#fff;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+/*About */
+.aboutme {
+	color: #fff;
+	font-size: 40px;
+	line-height: 1.5;
+
+}
+
+.icons_curve {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #fff;
+	border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+/*Contact */
+.description_contact{
+  color: #fff;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+	position: relative;
+
+
+}
+
+
+footer
+{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	color: #fff;
+  background: rgb(7,163,152);
+  background: linear-gradient(15deg, rgba(7,163,152,1) 6%, rgba(4,108,101,1) 74%);
+}
+
+
+
+.sboot {
+  width: 130px;
+  height: 40px;
+  position: relative;
+
+}
+
+
+.qqq {
+	left: 50%;
+	top: 55%;
+	bottom:20%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+  background-position: center;
+  position: relative;
+}
+
+.qqq DH1 {
+	color: #FFFFFF;
+	font-size:60px;
+}
+.qqq DH2 {
+	color: #07A398;
+	font-size:28px;
+
+}
+
+.qqq DP {
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.soon {
+  left: 50%;
+	top: 35%;
+	color:#fff;
+	transform: translate(-50%, -55%);
+	text-align: center;
+	font-size:80px;
+  background-position: center;
+  position: relative;
+
+
+}

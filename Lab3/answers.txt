@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: it was the slowest method in terms of sorting reversed and random sets but was pretty good with sorted set
+
+sort2 uses: Merge sort
+
+How do you know?: it was the fastest method in terms of sorting all sets!
+
+sort3 uses: Selection sort
+
+How do you know?: it was the compromise solution among the two methods not so fast neither so slow.
